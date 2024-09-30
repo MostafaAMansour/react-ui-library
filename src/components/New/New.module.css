@@ -1,0 +1,12 @@
+.search
+{
+    width: 80%;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10PX;
+}
+.title
+{
+    text-align: center;
+    font-family: cursive;
+}

@@ -1,0 +1,62 @@
+.header
+{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border: 2px solid rgb(144, 144, 144);
+    background-color: white;
+    position: relative;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.car
+{
+
+    width: 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+}
+.navLinks
+{
+    margin-left: 30px;
+    margin:  auto;
+    text-align: center;
+
+}
+.navLink
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 12px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+.navLink
+{
+    color: black;
+}
+
+.navLink:hover
+{
+    color: darkred;
+}

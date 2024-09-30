@@ -1,0 +1,21 @@
+.title
+{
+    text-align: center;
+    cursor: pointer;
+    font-family: cursive;
+}
+.title::after
+{
+    content: "";
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 10px;
+    height: 1.5px;
+    transition: all 0.5s;
+    background-color: black;
+}
+.title:hover::after
+{
+    width: 400px;
+}

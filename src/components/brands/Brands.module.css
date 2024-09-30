@@ -1,0 +1,72 @@
+.green
+{
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+}
+.redd
+{
+    color: rgb(149, 34, 34);
+    font-weight: lighter;
+    font-size: 38px;
+    font-family: cursive;
+    margin: 20px;
+}
+.name
+{
+
+    margin: 10px;
+    color: darkred;
+    font-style: italic;
+    font-family:cursive;
+    font-weight: bolder;
+    display: block;
+    text-decoration: none;
+}
+#model
+{
+    transition: all 0.5s;
+
+}
+
+#model:hover
+{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+#content
+{
+    height:230px ;
+    margin: auto;
+    transition: all 0.5s;
+}
+#content:hover
+{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+#photo
+{
+    height: 200px;
+
+}
+#price
+{
+    color: darkred;
+    
+}
+#body
+{
+    margin-top: 50px;
+}
+#btn
+{
+    width: 100%;
+}
+#top
+{
+    color: rgb(149, 34, 34);
+    font-weight: lighter;
+    font-family: cursive;
+    margin: 20px;
+}

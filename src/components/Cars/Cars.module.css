@@ -1,0 +1,26 @@
+.content
+{
+    height:320px ;
+}
+.content:hover
+{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+#photo
+{
+    height: 200px;
+}
+#price
+{
+    color: darkred;
+    
+}
+
+#right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+}
