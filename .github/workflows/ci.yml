@@ -5,50 +5,51 @@ on:
     branches:
       - main
 
-# permissions:
-#       contents: read
-#       pages: write
-#       id-token: write
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18.8.0'
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      - name: Update dependencies
-        run: npm update
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: '18.8.0'
 
-      - name: Install dependencies
-        run: npm install
+#       - name: Update dependencies
+#         run: npm update
 
-      - name: Run tests
-        run: npm test
+#       - name: Install dependencies
+#         run: npm install
 
-      - name: Build project
-        run: npm run build
+#       - name: Run tests
+#         run: npm test
+
+#       - name: Build project
+#         run: npm run build
 
       - name: Release
         run: npx semantic-release
+        permissions:
+          contents: read
+          pages: write
+          id-token: write
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Send Email Notification
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: UI Library Update
-          body: The following components have been updated/added\n\nThe following components are broken or have missing dependencies
-          to: toota353535@gmail.com
-          from: mo.abdallah3535@gmail.com
+      # - name: Send Email Notification
+      #   uses: dawidd6/action-send-mail@v3
+      #   with:
+      #     server_address: smtp.gmail.com
+      #     server_port: 465
+      #     username: ${{ secrets.EMAIL_USERNAME }}
+      #     password: ${{ secrets.EMAIL_PASSWORD }}
+      #     subject: UI Library Update
+      #     body: The following components have been updated/added\n\nThe following components are broken or have missing dependencies
+      #     to: toota353535@gmail.com
+      #     from: mo.abdallah3535@gmail.com
