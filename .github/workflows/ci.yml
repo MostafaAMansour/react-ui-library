@@ -34,10 +34,6 @@ jobs:
 
       - name: Release
         run: npx semantic-release
-        permissions:
-          contents: read
-          pages: write
-          id-token: write
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
