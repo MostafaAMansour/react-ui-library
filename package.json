@@ -1,5 +1,5 @@
 {
-  "name": "@MostafaAMansour/ui-library",
+  "name": "@mostafaamansour-org/ui-library",
   "version": "0.0.0-development",
   "private": false,
   "dependencies": {
@@ -34,18 +34,7 @@
       "plugin:storybook/recommended"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
     "@semantic-release/changelog": "^6.0.0",
@@ -67,10 +56,11 @@
   
   "repository": {
     "type": "git",
-    "url": "https://github.com/MostafaAMansour/react_ui_library/"
+    "url": "https://github.com/MostafaAMansour/react-ui-library.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
+    "tag": "latest",
+    "access": "public"
   }
 }
