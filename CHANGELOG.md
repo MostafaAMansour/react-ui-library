@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/MostafaAMansour/react-ui-library/compare/v1.1.0...v1.1.1) (2024-10-01)
+
+
+### Bug Fixes
+
+* footer is fixed ([ad9862c](https://github.com/MostafaAMansour/react-ui-library/commit/ad9862ca3b74923a1e402db4a55edca420e36be5))
+
 # [1.1.0](https://github.com/MostafaAMansour/react-ui-library/compare/v1.0.0...v1.1.0) (2024-10-01)
 
 
