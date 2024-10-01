@@ -15,6 +15,7 @@ jobs:
       id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout code
+        uses: actions/checkout@v2
         container:
           image: registry.access.redhat.com/ubi8/nodejs-18
 
