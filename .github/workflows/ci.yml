@@ -38,7 +38,7 @@ jobs:
         id: release_step
         #run: npx semantic-release || echo "No release published"
         run: |
-          npx semantic-release --branches main > release-log.txt || echo "No release published" > release-log.txt
+          npx semantic-release > release-log.txt || echo "No release published" > release-log.txt
           # Capture the release notes if a release is published
           if grep -q "Published release" release-log.txt; then
             echo "new_release=true" >> $GITHUB_ENV
