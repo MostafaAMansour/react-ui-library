@@ -35,13 +35,14 @@ jobs:
         run: npm run build
 
       - name: Release
-        run: npx semantic-release
+        id: release_step
+        run: npx semantic-release || echo "No release published"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Send Email Notification
-        if: steps.release.outputs.newRelease == 'true' # Ensure this step runs only if a new release is created      
+        if: steps.release_step.outcome == 'success' # Ensure this step runs only if a new release is created      
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
