@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/MostafaAMansour/react-ui-library/compare/v1.1.1...v1.1.2) (2024-10-01)
+
+
+### Bug Fixes
+
+* footer alignment is back to center ([4ec5ecf](https://github.com/MostafaAMansour/react-ui-library/commit/4ec5ecfb92bd72e49927d6747ead1501de8f8a88))
+
 ## [1.1.1](https://github.com/MostafaAMansour/react-ui-library/compare/v1.1.0...v1.1.1) (2024-10-01)
 
 
