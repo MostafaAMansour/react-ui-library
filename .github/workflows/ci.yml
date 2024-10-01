@@ -15,21 +15,9 @@ jobs:
       id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        container:
+          image: registry.access.redhat.com/ubi8/nodejs-18
 
-      - name: Set up Docker
-        run: |
-          docker pull registry.access.redhat.com/ubi8/ubi:latest
-          docker run -d --name redhat8-build -v $PWD:/workspace -w /workspace registry.access.redhat.com/ubi8/ubi:latest tail -f /dev/null
-
-      - name: Install dependencies and build
-        run: |
-          docker exec redhat8-build yum install -y gcc-c++ make
-          docker exec redhat8-build curl -sL https://rpm.nodesource.com/setup_18.x | bash -
-          docker exec redhat8-build yum install -y nodejs
-          docker exec redhat8-build npm install
-          docker exec redhat8-build npm run build
-          
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
